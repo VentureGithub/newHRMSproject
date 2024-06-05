@@ -1,0 +1,17 @@
+package com.hrportal.mapper;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
+
+@ComponentScan
+@Component
+public class mapperImpl extends DestinationSourceMapperImpl{
+	
+	
+	
+	
+	
+	
+	
+
+}

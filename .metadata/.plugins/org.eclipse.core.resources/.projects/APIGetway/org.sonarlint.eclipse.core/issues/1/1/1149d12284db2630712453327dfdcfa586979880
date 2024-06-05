@@ -1,0 +1,22 @@
+
+v
+java:S22590"BA "NullPointerException" could be thrown; "get()" can return null.b 270add672a25a6e59ff40714e43553bch
+v	java:S125"<This block of commented-out lines of code should be removed.8»©…ù1b b0f591a83a4031296a1511c3fb3c0be4h
+{
+java:S2259:"GA "NullPointerException" could be thrown; "userRoles" is nullable here.b 02e1a2f8f7bb434face61a81a0dfa29ah
+v	java:S125."<This block of commented-out lines of code should be removed.8Šÿ‰ù1b 35216cef2da8af505a12441c5e9761b7h
+d
+java:S19433"0Remove this use of constructor "String(byte[])".b 27118326006d3829667a400ad23d5d98h
+6
+java:S1451"&Add or update the header of this file.h
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8ùò¢›þ1b 0132ec8cee01c5dd244e1a60fe6448a1h
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8ùò¢›þ1b 0132ec8cee01c5dd244e1a60fe6448a1h
+v	java:S125""<This block of commented-out lines of code should be removed.8ùò¢›þ1b 7fc28ae818181c336ffc77a7c502a756h
+v	java:S125Y"<This block of commented-out lines of code should be removed.8¬èé¡þ1b d866b458f09f0e149f5a1b6a77489ddeh
+j
+java:S3740"/Provide the parametrized type for this generic.8»Ø¿¢þ1b 1e7d918c224f35c5a8366b29417d011bh
+m
+java:S1135S"2Complete the task associated to this TODO comment.8»Ø¿¢þ1b 36364ec9aa2f0995d283c1c6a92d2e5ch

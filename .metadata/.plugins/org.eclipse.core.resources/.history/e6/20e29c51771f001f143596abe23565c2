@@ -1,0 +1,17 @@
+package com.hrportal.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.ReportingPolicy;
+import org.mapstruct.factory.Mappers;
+
+import com.hrportal.entity.CandidateCredential;
+import com.hrportal.model.response.CandidatePassResponse;
+
+@Mapper(componentModel = "spring", unmappedSourcePolicy = ReportingPolicy.IGNORE)
+public interface DestinationSourceMapper {
+
+	DestinationSourceMapper Intence = Mappers.getMapper(DestinationSourceMapper.class);
+
+	CandidateCredential candiCredToCandiPassRes(CandidatePassResponse credentialData);
+
+}

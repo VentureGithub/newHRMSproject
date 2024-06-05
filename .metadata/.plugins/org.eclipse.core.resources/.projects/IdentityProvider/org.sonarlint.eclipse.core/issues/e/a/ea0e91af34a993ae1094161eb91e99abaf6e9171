@@ -1,0 +1,10 @@
+
+S
+java:S4926"Remove this "serialVersionUID".b c6e1e520055c2b7e9948b6f1429b8974h
+n
+java:S1258":Add a constructor to the class, or provide default values.b c9c5c65fb4af9cf90eb99b3b84424189h
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+6
+java:S1451"&Add or update the header of this file.h
+“
+java:S3437<"_Make this value-based field transient so it is not included in the serialization of this class.b 97defd20a4830b556e53934f53e6b736h

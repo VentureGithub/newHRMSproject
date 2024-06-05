@@ -1,0 +1,52 @@
+
+[
+java:S2164O"'Use a "double" or "BigDecimal" instead.b 14a0b01bf90dc2b48a9736fd3f0568ceh
+[
+java:S2164P"'Use a "double" or "BigDecimal" instead.b 6169ad3caf5d3b9dbcd0a912d44469e0h
+[
+java:S2164R"'Use a "double" or "BigDecimal" instead.b 56c40b815e32d163fffad65c8851093dh
+[
+java:S2164R"'Use a "double" or "BigDecimal" instead.b 0e2bbcdd37e5092b173a6d982e6633afh
+[
+java:S2164Z"'Use a "double" or "BigDecimal" instead.b 357276b8eb277aed42eca74d32420032h
+[
+java:S2164\"'Use a "double" or "BigDecimal" instead.b 005a7005710d2e2abfaf7628ce67e5b7h
+[
+java:S2164c"'Use a "double" or "BigDecimal" instead.b 84379331b4d40123b52ff4451eabdae5h
+[
+java:S2164c"'Use a "double" or "BigDecimal" instead.b 84379331b4d40123b52ff4451eabdae5h
+6
+java:S1451"&Add or update the header of this file.h
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+	java:S103‡"KSplit this 147 characters long line (which is greater than 120 authorized).b 7737826f69a17f6643b3db79d6cf506ch
+	java:S103™"KSplit this 131 characters long line (which is greater than 120 authorized).b a8da2248461638c7c38617b070e4ec1eh
+	java:S103©"KSplit this 126 characters long line (which is greater than 120 authorized).b 330e6b43c54aef0ef3bb5ece9e21d617h
+v
+java:S6813-"BRemove this field injection and use constructor injection instead.b 0132ec8cee01c5dd244e1a60fe6448a1h
+^	java:S106:"+Replace this use of System.out by a logger.b bb1c3f2ea781263d3a2bb92b06a2061fh
+o	java:S1259"<This block of commented-out lines of code should be removed.b ece48790b2652d3eb3f12f03251ea4d8h
+o	java:S125<"<This block of commented-out lines of code should be removed.b 0c8b2c9585eb05dd9cd70726cf8cbc07h
+u
+java:S1854["ARemove this useless assignment to local variable "twocolumWidth".b dad287a9ede4ed27bb016a76e7cb8ad9h
+š	java:S138@"gThis method has 87 lines, which is greater than the 75 lines authorized. Split it into smaller methods.b b091a02af811d29ea55fcc002f8bf613h
+V	java:S818S"#Upper-case this literal "f" suffix.b 9acdf46fe92a925329941da75a312c4dh
+V	java:S818X"#Upper-case this literal "f" suffix.b 0c4b02ccadf532b33083875e45184f8ch
+V	java:S818Y"#Upper-case this literal "f" suffix.b 801530d6ae6ad803393e9d78d2707a84h
+V	java:S818Z"#Upper-case this literal "f" suffix.b f6cb37bc0961d55deb9ea111f78ff283h
+^
+java:S1197["*Move the array designators [] to the type.b 42393640eb046ac58b3bdca53c88e0d1h
+f
+java:S1481["2Remove this unused "twocolumWidth" local variable.b 62be893d6114f978912439fcf49d7353h
+^
+java:S1197\"*Move the array designators [] to the type.b c8a6daf626e09b389700ec204f2ebd01h
+V	java:S818a"#Upper-case this literal "f" suffix.b 650e829a840d52b3b311add110e87a0fh
+V	java:S818i"#Upper-case this literal "f" suffix.b 35bd9d14efddde838aa2b0a8c9426964h
+o	java:S125x"<This block of commented-out lines of code should be removed.b d02d1d4793cb33a6f1455d337d2dd828h
+W	java:S818ƒ"#Upper-case this literal "f" suffix.b 64771a8f2e4276f55219ad0e3faa4140h
+W	java:S818¬"#Upper-case this literal "f" suffix.b 8899e7dbddb8df0385af5c22b35c4df0h
+W	java:S818¼"#Upper-case this literal "f" suffix.b a8ab0cf47bc5da905196d339f3eedfc4h
+W	java:S818Á"#Upper-case this literal "f" suffix.b 8899e7dbddb8df0385af5c22b35c4df0h
+|
+java:S1774Ã"GConvert this usage of the ternary operator to an "if"/"else" structure.b d1457b72c3fb323a2671125aef3eab5dh
+ï
+java:S4605+"º'CredentialController' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.b 8c109d4c1d52f720466f19f840b40aa5h

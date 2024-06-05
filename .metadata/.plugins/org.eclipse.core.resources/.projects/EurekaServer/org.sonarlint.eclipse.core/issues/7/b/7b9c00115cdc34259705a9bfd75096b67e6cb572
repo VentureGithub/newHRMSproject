@@ -1,0 +1,6 @@
+
+6
+java:S1451"&Add or update the header of this file.h
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+{
+java:S4604"GExclude from the auto-configuration mechanism the beans you don't need.b 9af80668f90f90f4eba6d6df4b604bc2h

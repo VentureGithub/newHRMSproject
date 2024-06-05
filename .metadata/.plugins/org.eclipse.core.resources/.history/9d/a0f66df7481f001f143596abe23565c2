@@ -1,0 +1,111 @@
+package com.hrportal.controller;
+
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.hrportal.entity.CandidateCredential;
+import com.hrportal.entity.CandidateOtp;
+import com.hrportal.model.request.CandidatePassRequest;
+import com.hrportal.model.response.CandidatePassResponse;
+import com.hrportal.repository.CandidateOtpRepository;
+import com.hrportal.service.CandidateService;
+import com.identityprovider.entity.LoginOtp;
+
+import lombok.extern.slf4j.Slf4j;
+
+@ComponentScan
+@RestController
+@RequestMapping("/hr")
+@Slf4j
+@CrossOrigin(origins = "*")
+public class CandidateController {
+
+	private CandidateService candidateService;
+
+	private CandidateOtpRepository candidateOtpData;
+	
+	public CandidateController(CandidateService candidateService,CandidateOtpRepository candidateOtpData) {
+		super();
+		this.candidateService = candidateService;
+		this.candidateOtpData=candidateOtpData;
+	}
+
+	@PostMapping("/add-candidate")
+	public ResponseEntity<Object> addCandidate(@RequestParam("Email") String email) {
+
+		try {
+			CandidateCredential candidateResponse = this.candidateService.addCondidateResume(email);
+			if (candidateResponse == null) {
+				log.error("ERROR: SERVICE LYEAR ERROR");
+				throw new IllegalArgumentException("ERROR | WE NOT EBALE TO  FIND  DAAT ON SERVICE LYEAR");
+			}
+
+			log.info("MESSAGE: CANDIDATE SAVE");
+			return new ResponseEntity<>("MESSAGE | CANDIDATE SAVE SUCCESSFULLY IN OUR DATABASE", HttpStatus.OK);
+		} catch (Exception e) {
+			log.error("ERROR: DATA BASE LYEAR ERRROR ");
+			return new ResponseEntity<>("ERROR | CANDIDATE NOT SAVE" + e.getMessage(), HttpStatus.BAD_REQUEST);
+		}
+	}
+
+	@PostMapping("/reset-pass/candidate-req")
+	public ResponseEntity<Object> resetCandidatePasswordReq(@RequestParam("Email") String email) {
+
+		try {
+			CandidateOtp candidateResponse = this.candidateService.getRequestToChangePass(email);
+			if (candidateResponse == null) {
+				log.error("ERROR: IN SERVICE LYEAR ERROR");
+				throw new IllegalArgumentException("ERROR | WE NOT EBALE TO  FIND  DATA ON SERVICE LYEAR");
+			}
+
+			log.info("MESSAGE: REQUEST ACCEPTED FOR CHANGE PASSWORD");
+			return new ResponseEntity<>(candidateResponse, HttpStatus.OK);
+		} catch (Exception e) {
+			log.error("ERROR: INTERNAL SERVER ERROR");
+			return new ResponseEntity<>("ERROR | UNABLE TO ACCEPT TO CHANGE PASSWORD" + e.getMessage(),
+					HttpStatus.BAD_REQUEST);
+		}
+	}
+
+	@PostMapping("/reset-pass/candidate-res")
+	public ResponseEntity<Object> resetCandidatePasswordRes(@RequestBody CandidatePassRequest candidateData) {
+
+		CandidateOtp otpResponse = this.candidateOtpData.findByEmail(candidateData.getEmail());
+		long noOfSeconds = otpResponse.getModifyAt().until(LocalDateTime.now(), ChronoUnit.SECONDS);
+		long min = noOfSeconds / 60;
+
+		if (otpResponse.getOtp()!=candidateData.getOtp()) {
+			log.warn("Warm! | otp have been wrong.");
+			return new ResponseEntity<>("bad", HttpStatus.BAD_GATEWAY);
+		} else if (min > 2) {
+			log.warn("Warm! | otp expaired.!");
+			return new ResponseEntity<>("bad", HttpStatus.BAD_GATEWAY);
+		}
+
+		try {
+			CandidatePassResponse candidateResponse = this.candidateService.resForChangePass(candidateData);
+			if (candidateResponse == null) {
+				log.error("ERROR: IN SERVICE LYEAR ERROR");
+				throw new IllegalArgumentException("ERROR | WE NOT EBALE TO  FIND  DATA ON SERVICE LYEAR");
+			}
+
+			log.info("MESSAGE: REQUEST ACCEPTED AND DONE FOR CHANGE PASSWORD");
+			return new ResponseEntity<>("MESSAGE | SUCCESSFULLY CHANGED PASSWORD", HttpStatus.OK);
+		} catch (Exception e) {
+			log.error("ERROR: INTERNAL SERVER ERROR");
+			return new ResponseEntity<>("ERROR | UNABLE TO CHANGE YOU PASSWORD DUE TO :" + e.getMessage(),
+					HttpStatus.BAD_REQUEST);
+		}
+	}
+
+}

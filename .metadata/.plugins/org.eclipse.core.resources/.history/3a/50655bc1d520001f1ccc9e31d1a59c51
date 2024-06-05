@@ -1,0 +1,44 @@
+package com.hrportal.service;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.dao.DataRetrievalFailureException;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Service;
+
+import com.hrportal.util.Util;
+
+import lombok.extern.slf4j.Slf4j;
+
+@ComponentScan
+@Service
+@Slf4j
+public class CandidateDetailsService<K, S> {
+
+	@Autowired
+	private ModelMapper mapper;
+
+	@SuppressWarnings("unchecked")
+	public K addDetails(JpaRepository<S, Long> repo, S dtoToEntity, Class<S> cls, K ddtoToReturn) {
+		try {
+			// S entityData;
+			S entityData = (S) Util.createInstance(cls);
+			entityData = this.mapper.map(dtoToEntity, cls);
+			entityData = repo.save(entityData);
+			if (entityData == null) {
+				log.error("");
+				throw new IllegalArgumentException("");
+			}
+			ddtoToReturn = (K) Util.createInstance(ddtoToReturn.getClass());
+			ddtoToReturn = (K) this.mapper.map(entityData, ddtoToReturn.getClass());
+			return ddtoToReturn;
+
+		} catch (Exception e) {
+			log.error("error | internal server Error");
+			throw new DataRetrievalFailureException("error : Failed to insert data due to: " + e.getMessage());
+		}
+
+	}
+
+}

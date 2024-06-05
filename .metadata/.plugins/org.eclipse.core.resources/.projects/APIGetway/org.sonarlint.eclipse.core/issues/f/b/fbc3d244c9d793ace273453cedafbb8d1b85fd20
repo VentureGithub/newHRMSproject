@@ -1,0 +1,41 @@
+
+6
+java:S1451"&Add or update the header of this file.h
+=	java:S113"'Add a new line at the end of this file.8é«Î£þ1h
+[	java:S105"EReplace all tab characters in this file by sequences of white-spaces.8é«Î£þ1h
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8é«Î£þ1b 0132ec8cee01c5dd244e1a60fe6448a1h
+v	java:S125"<This block of commented-out lines of code should be removed.8é«Î£þ1b 5ed9cacaa0be6529fbf4e90f44a15bc6h
+b
+java:S2211)"'Specify a type for: 'exchange', 'chain'8é«Î£þ1b cc833dc0e74e1ec15cc96bd56e527539h
+÷
+java:S4605"»'AuthenticationFilterr' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.8é«Î£þ1b 4690b8f3c2e41be384923057f40e7bf4h
+²
+java:S1120-"wMake this line start after 6 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)8ï«ß£þ1b 36c197c7c3c36c69b2e8acdec810f324h
+³
+java:S1120."xMake this line start after 8 spaces instead of 10 in order to indent the code consistently. (Indentation level is at 2.)8ï«ß£þ1b 3ce6d58e1a47078fc0ebe168f871c589h
+³
+java:S11203"xMake this line start after 8 spaces instead of 10 in order to indent the code consistently. (Indentation level is at 2.)8ï«ß£þ1b a40ee464889e9abd488ba2ae2e8233bfh
+³
+java:S1120;"xMake this line start after 8 spaces instead of 10 in order to indent the code consistently. (Indentation level is at 2.)8ï«ß£þ1b 8025c4d23474a2d9ecdfbd435d9f01bdh
+€	java:S112."FDefine and throw a dedicated exception instead of using a generic one.8ï«ß£þ1b 15452a9b0f2356c3dabe720a67728b3dh
+€	java:S112<"FDefine and throw a dedicated exception instead of using a generic one.8ï«ß£þ1b 15452a9b0f2356c3dabe720a67728b3dh
+
+java:S5612)"DReduce this lambda expression number of lines from 18 to at most 10.8ï«ß£þ1b 7915c95d6f6216304a78a9e2805c193fh
+o
+java:S2221:"4Catch a list of specific exception subtypes instead.8ï«ß£þ1b b0d4998a26f5b5742ad38c4af8817e32h
+v	java:S1257"<This block of commented-out lines of code should be removed.8ï«ß£þ1b 7b220801014688b1cdd64b1f4f62017bh
+e	java:S1069"+Replace this use of System.out by a logger.8ï«ß£þ1b bb1c3f2ea781263d3a2bb92b06a2061fh
+u
+java:S1258C":Add a constructor to the class, or provide default values.8´—œ¤þ1b fa535ffb25e1fd20341652f9be21e06eh
+³
+java:S11209"xMake this line start after 8 spaces instead of 10 in order to indent the code consistently. (Indentation level is at 2.)8ö©Ÿ¤þ1b 2a2165386cf24d52c3b38c5ecde0e74dh
+e	java:S106;"+Replace this use of System.out by a logger.8ö©Ÿ¤þ1b bb1c3f2ea781263d3a2bb92b06a2061fh
+v	java:S125"<This block of commented-out lines of code should be removed.8ŽÇ¤þ1b 8a69c6ee9b42112fc93cf70712fce359h
+z
+java:S1213"?Move this static variable to comply with Java Code Conventions.8†äÌ¤þ1b ecc2e9c313faddb07e7da223c1dc5c3fh
+²
+java:S1120+"wMake this line start after 4 spaces instead of 6 in order to indent the code consistently. (Indentation level is at 2.)8ÄÚÐ¤þ1b aa5c2fa00ae9a05177a5934069ef62e8h
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8™«Ó¤þ1b 0132ec8cee01c5dd244e1a60fe6448a1h
+v	java:S125*"<This block of commented-out lines of code should be removed.8‹ŒÕ¤þ1b 0cfde72418a26b943f71d7ed153763e9h

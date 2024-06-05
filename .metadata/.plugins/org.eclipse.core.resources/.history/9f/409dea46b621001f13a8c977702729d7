@@ -1,0 +1,34 @@
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        users:
+#          uri: http://user-handlerr:8081
+#          predicates:
+#            - Path=/user/**
+#          fallbackUri: http://localhost:8081/user/kk
+
+server:
+  port: 8888
+    
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: IDENTITY-PROVIDER
+        uri: http://localhost:7000/
+        predicates:
+        - Path=/identity-handler/**  
+        metadata:
+          cors:
+            allowedOrigins: '*'
+            allowedMethods:
+              - GET
+              - POST
+            allowedHeaders: '*'
+            maxAge: 30
+     default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_FIRST 
+            
+jwt:
+  secret: MiAVzqUXy5Tfr1kVIGpPMiAVzqUXy5Tfr1kVIGpP          

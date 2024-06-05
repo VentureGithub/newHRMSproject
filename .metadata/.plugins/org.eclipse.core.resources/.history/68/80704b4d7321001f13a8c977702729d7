@@ -1,0 +1,15 @@
+spring.application.name=APIGetway
+
+#server.port=8888
+
+spring.application.name=api-gateway
+eureka.instance.hostname=localhost
+
+
+#spring.cloud.gateway.routes[0].id=USER-HANDLERR
+#spring.cloud.gateway.routes[0].uri=lb://USER-HANDLERR
+#spring.cloud.gateway.routes[0].predicates[0]=Path=/user/**
+
+spring.cloud.gateway.routes[0].id=ADMINIDENTITY	
+spring.cloud.gateway.routes[0].uri=lb://ADMINIDENTITY	
+spring.cloud.gateway.routes[0].predicates[0]=Path=/admin/**

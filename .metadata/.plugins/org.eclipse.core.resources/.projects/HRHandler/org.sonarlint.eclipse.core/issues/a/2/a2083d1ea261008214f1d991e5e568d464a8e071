@@ -1,0 +1,8 @@
+
+6
+java:S1451"&Add or update the header of this file.h
+©
+java:S3242"nUse 'org.springframework.data.repository.CrudRepository' here; it is a more general type than 'JpaRepository'.8¯¤•ı1b 11ab26c7acbd226f1a634b1669b8c738h
+[	java:S105"EReplace all tab characters in this file by sequences of white-spaces.8¯¤•ı1h
+o
+java:S2221 "4Catch a list of specific exception subtypes instead.8ÙÂÇı1b b0d4998a26f5b5742ad38c4af8817e32h

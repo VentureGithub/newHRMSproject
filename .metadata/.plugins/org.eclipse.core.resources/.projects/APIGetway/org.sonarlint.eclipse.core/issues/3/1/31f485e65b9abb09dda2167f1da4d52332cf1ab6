@@ -1,0 +1,12 @@
+
+Ž
+java:S3749"ZAnnotate this member with "@Autowired", "@Resource", "@Inject", or "@Value", or remove it.b a8b67ed40c93036a63ac40fa22d85b3ah
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+‰
+java:S1104"UMake isSecured a static final constant or non-public and provide accessors if needed.b a8b67ed40c93036a63ac40fa22d85b3ah
+6
+java:S1451"&Add or update the header of this file.h
+=	java:S113"'Add a new line at the end of this file.8ÃðÚ¤þ1h
+ñ
+java:S4605
+"µ'RouterValidator' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.8ÃðÚ¤þ1b 4b715d71b9273c160bd92123aec5db75h

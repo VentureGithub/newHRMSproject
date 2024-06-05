@@ -1,0 +1,25 @@
+
+x
+java:S4288"=Remove this annotation and use constructor injection instead.8ß¾¹€ý1b 0132ec8cee01c5dd244e1a60fe6448a1h
+k
+java:S1449Å"6Define the locale to be used in this String operation.b b8a8247c194a6427896cac782e7c5a7ah
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+e	java:S1064"+Replace this use of System.out by a logger.8Õù­ ý1b bb1c3f2ea781263d3a2bb92b06a2061fh
+e
+java:S2140É")Use "java.util.Random.nextInt()" instead.8Î«¥¡û1b 3de8353f9a30b5d10e2f7c496ecab616h
+e
+java:S2140Ð")Use "java.util.Random.nextInt()" instead.8Íòî¤û1b 3de8353f9a30b5d10e2f7c496ecab616h
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8ß¾¹€ý1b 0132ec8cee01c5dd244e1a60fe6448a1h
+v	java:S125u"<This block of commented-out lines of code should be removed.8Ç´Êòü1b 7fb568eaa14ad5c7ad6d0ee52e87735dh
+i
+java:S1996"RThere are 2 top-level types in this file; move all but one of them to other files.8ë…á ý1h
+P
+java:S1700Ü"Rename field "email"8ë…á ý1b 0c83f57c786a0b4a39efab23731c7ebch
+6
+java:S1451"&Add or update the header of this file.h
+j
+java:S2039Ü".Explicitly declare the visibility for "email".8ë…á ý1b 0c83f57c786a0b4a39efab23731c7ebch
+w	java:S125“"<This block of commented-out lines of code should be removed.8¼ïøÆý1b 5cd3b3aa14214ba197d955d1c59f0cf6h
+ 
+java:S1488–"dImmediately return this expression instead of assigning it to the temporary variable "responseData".8­öýÆý1b a6dd61d26f10aa264171ec2c5d5ac03fh

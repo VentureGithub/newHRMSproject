@@ -1,0 +1,13 @@
+
+d
+java:S1943@"0Remove this use of constructor "String(byte[])".b 27118326006d3829667a400ad23d5d98h
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+6
+java:S1451"&Add or update the header of this file.h
+}
+java:S6813"BRemove this field injection and use constructor injection instead.8©§Ë¢þ1b 0132ec8cee01c5dd244e1a60fe6448a1h
+}
+java:S6813!"BRemove this field injection and use constructor injection instead.8©§Ë¢þ1b 0132ec8cee01c5dd244e1a60fe6448a1h
+}
+java:S6813$"BRemove this field injection and use constructor injection instead.8©§Ë¢þ1b 0132ec8cee01c5dd244e1a60fe6448a1h
+v	java:S125'"<This block of commented-out lines of code should be removed.8©§Ë¢þ1b fdf444ee01c1344a9b68ac96b771ed34h

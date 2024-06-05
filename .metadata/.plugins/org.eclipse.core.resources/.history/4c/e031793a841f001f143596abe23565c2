@@ -1,0 +1,5 @@
+package com.hrportal.service;
+
+public class CandidateDetailsService {
+
+}

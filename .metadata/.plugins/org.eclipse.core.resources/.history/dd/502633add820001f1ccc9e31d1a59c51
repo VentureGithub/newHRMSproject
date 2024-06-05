@@ -1,0 +1,28 @@
+package com.hrportal.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.mapstruct.ReportingPolicy;
+
+import com.hrportal.entity.CandidateCredential;
+import com.hrportal.entity.CandidateDetails;
+import com.hrportal.entity.JobPost;
+import com.hrportal.model.CandidateDetailsDTO;
+import com.hrportal.model.request.JobPostRequest;
+import com.hrportal.model.response.CandidatePassResponse;
+
+@Mapper(componentModel = "spring", unmappedSourcePolicy = ReportingPolicy.IGNORE)
+public interface DestinationSourceMapper  <S,K> {
+
+	// DestinationSourceMapper Intence =
+	// Mappers.getMapper(DestinationSourceMapper.class);
+
+	@Mapping(target = "status", ignore = true)
+	CandidatePassResponse candiCredToCandiPassRes(CandidateCredential credentialData);
+
+	// @Mapping(target = "status", ignore = true)
+	JobPost jobPostRequestToJobPost(JobPostRequest jobPostData);
+
+	S candidateDetailToCandiDateDetails(K dto);
+
+}

@@ -1,0 +1,9 @@
+
+€	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.b 8920ad5bcf4f2d1ae00897eb55bd5079h
+h
+java:S2221D"4Catch a list of specific exception subtypes instead.b b0d4998a26f5b5742ad38c4af8817e32h
+6
+java:S1451"&Add or update the header of this file.h
+ð
+java:S4605"»'adminAccessController' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.b 8920ad5bcf4f2d1ae00897eb55bd5079h
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h

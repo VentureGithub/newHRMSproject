@@ -1,0 +1,14 @@
+
+S
+java:S2119ª"Save and re-use this "Random".b 64663f4646781c9c0110838b905daa23h
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+X
+java:S1309Ÿ"#Suppressing warnings is not allowedb f24740378dae2731064774805a01c182h
+k
+java:S1449°"6Define the locale to be used in this String operation.b b8a8247c194a6427896cac782e7c5a7ah
+6
+java:S1451"&Add or update the header of this file.h
+n
+java:S3516 "9Refactor this method to not always return the same value.b f3c82c921790d2af3422f1a21c3a2f7dh
+x
+java:S1941¡"CMove the declaration of "response" closer to the code that uses it.b d1fc8eaf36937be0c3ba8cfe0a2c1bfeh

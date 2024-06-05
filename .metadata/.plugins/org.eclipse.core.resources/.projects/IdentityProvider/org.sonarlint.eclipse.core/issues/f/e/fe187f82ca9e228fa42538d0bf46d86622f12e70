@@ -1,0 +1,12 @@
+
+R
+java:S1943e"Remove this use of "getBytes".b 5b2fd98943d4b7c62db207fc84a6dd66h
+6
+java:S1451"&Add or update the header of this file.h
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+h
+java:S2221C"4Catch a list of specific exception subtypes instead.b b0d4998a26f5b5742ad38c4af8817e32h
+n	java:S126U";"if ... else if" constructs should end with "else" clauses.b 2c4072636eeeb9b8f1a47acb6deb1fb6h
+í
+java:S4605$"¸'IdentityController' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.b c9515f97f83c49f869c71169c44d54beh
+v	java:S125:"<This block of commented-out lines of code should be removed.8Ã²Žéý1b 466f367fbfb848ab4df734a0c36ecb14h

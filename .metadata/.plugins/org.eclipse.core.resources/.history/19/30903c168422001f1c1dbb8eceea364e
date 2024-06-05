@@ -1,0 +1,82 @@
+#spring:
+#  cloud:
+#    gateway:
+#      globalcors:
+#        add-to-simple-url-handler-mapping: true
+#
+#        corsConfigurations:
+#          '[/**]':
+#            allowedOrigins: "*"
+#            allowedMethods:
+#              - GET
+#              - POST
+#              - PUT
+#              - DELETE
+#              - PATCH
+#            allowedHeaders:
+#              - "Origin"
+#              - "Content-Type"
+#              - "Accept"
+#              - "Authorization"
+#              - "User-Key"
+#              - "Request-Tracker"
+#              - "Session-Tracker"
+#              - "X-XSRF-TOKEN"
+#              - "X-IBM-CLIENT-ID"
+#              - "Message-ID"
+#              - "X-IBM-CLIENT-SECRET"
+#      default-filters:
+#        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin, RETAIN_FIRST
+#
+#
+#      routes:
+#        - id: IDENTITY-PROVIDER
+#          uri: http://localhost:7000/
+#          predicates:
+#            - Path=/identity-handler/**
+
+
+inputFilePath: HR
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: identity-provider
+          uri: http://localhost:7000/
+          predicates:
+            - Path=/identity-handler/**
+          # Add more filters if needed
+
+        - id: hr-handler
+          uri: lb://hr-handler
+          predicates:
+            - Path=/hr-handler/**
+#          filters:
+#            - RoleSettingFilter
+#              args:
+#                role: HR
+#                restTemplate: org.springframework.web.client.RestTemplate
+          # Add more filters if needed
+#
+#        - id: admin-handler
+#          uri: lb://admin-handler
+#          predicates:
+#            - Path=/admin-handler/**
+#          filters:
+#            - name: RoleSettingFilter
+#              args:
+#                role: ADMIN
+#                restTemplate: org.springframework.web.client.RestTemplate
+#          # Add more filters if needed
+
+                      
+jwt:
+  secret: MiAVzqUXy5Tfr1kVIGpPMiAVzqUXy5Tfr1kVIGpP          

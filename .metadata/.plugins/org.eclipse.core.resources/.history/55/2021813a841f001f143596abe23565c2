@@ -1,0 +1,25 @@
+package com.hrportal.service;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Service;
+
+import lombok.extern.slf4j.Slf4j;
+
+
+@ComponentScan
+@Service
+@Slf4j
+public class CandidateDetailsService<K,S> {
+	
+	public K addDetails(JpaRepository<S, Long> Repo, K dtoModel, Class<S> cls) {
+		
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+
+}

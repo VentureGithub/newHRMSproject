@@ -1,0 +1,14 @@
+package com.hrportal.mapper;
+
+import org.mapstruct.Mapper;
+import org.mapstruct.ReportingPolicy;
+
+import com.hrportal.entity.CandidateDetails;
+import com.hrportal.model.CandidateDetailsDTO;
+
+@Mapper(componentModel = "spring", unmappedSourcePolicy = ReportingPolicy.IGNORE)
+public interface DestinationSourceMapperGeneric <S,K> {
+	
+	S candidateDetailToCandiDateDetails(K dto);
+
+}

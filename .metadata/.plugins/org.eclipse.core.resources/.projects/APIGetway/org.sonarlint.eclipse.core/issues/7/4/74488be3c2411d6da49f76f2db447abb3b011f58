@@ -1,0 +1,21 @@
+
+h
+java:S2221-"4Catch a list of specific exception subtypes instead.b b0d4998a26f5b5742ad38c4af8817e32h
+6
+java:S1451"&Add or update the header of this file.h
+c
+java:S1144"/Remove this unused private "getSignKey" method.b b610880750767ba6720ce088c918a481h
+o	java:S125"<This block of commented-out lines of code should be removed.b a2b18cd65fe6a328dc360f4f3f595ee9h
+ã
+java:S4605"®'JwtUtils' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.b 45a398b0b1f83d926c30721570bccc0dh
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+n
+java:S1258":Add a constructor to the class, or provide default values.b 45a398b0b1f83d926c30721570bccc0dh
+]
+java:S2143,")Use the Java 8 Date and Time API instead.b 4991267c04d6e25e135ad126f40e4d36h
+R
+java:S1943#"Remove this use of "getBytes".b 5b2fd98943d4b7c62db207fc84a6dd66h
+l
+java:S1213"8Move this variable to comply with Java Code Conventions.b 3c6e0b8a9c15224a8228b9a98ca1531dh
+Ž
+java:S3749"ZAnnotate this member with "@Autowired", "@Resource", "@Inject", or "@Value", or remove it.b 3c6e0b8a9c15224a8228b9a98ca1531dh

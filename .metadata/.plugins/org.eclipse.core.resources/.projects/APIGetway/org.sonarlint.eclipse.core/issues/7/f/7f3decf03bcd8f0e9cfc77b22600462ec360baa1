@@ -1,0 +1,14 @@
+
+Ž
+java:S3749"ZAnnotate this member with "@Autowired", "@Resource", "@Inject", or "@Value", or remove it.b 29a7e96467b69a9f5a93332e29e9b0deh
+ä
+java:S4605"¯'RoleModel' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.b c3b35bf1124a6ebfebd0d62d7687b39ah
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+^
+java:S6829"*Add @Autowired to one of the constructors.b c3b35bf1124a6ebfebd0d62d7687b39ah
+6
+java:S1451"&Add or update the header of this file.h
+o
+java:S1213";Move this constructor to comply with Java Code Conventions.b c3b35bf1124a6ebfebd0d62d7687b39ah
+o
+java:S1213";Move this constructor to comply with Java Code Conventions.b c3b35bf1124a6ebfebd0d62d7687b39ah

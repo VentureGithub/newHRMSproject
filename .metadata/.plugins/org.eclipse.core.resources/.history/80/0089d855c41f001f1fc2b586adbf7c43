@@ -1,0 +1,5 @@
+package com.hrportal.entity;
+
+public class JobPost {
+
+}

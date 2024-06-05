@@ -1,0 +1,39 @@
+package com.hrportal.service;
+
+import java.time.LocalDateTime;
+
+import org.apache.commons.lang.NullArgumentException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Service;
+
+import com.hrportal.entity.CandidateDetails;
+import com.hrportal.mapper.DestinationSourceMapper;
+import com.hrportal.model.CandidateDetailsDTO;
+import com.hrportal.util.Util;
+
+@ComponentScan
+@Service
+public class Conversion <S, K> {
+
+	@Autowired
+	private DestinationSourceMapper mapper;
+
+	public S cadidateDetailDtoToCandidateDetail(K dto, Class<K> cls) {
+
+		try {
+			
+		
+					
+			K dtoObject = (K) Util.createInstance(.getClass());
+			
+			S entityData = this.mapper.candidateDetailToCandiDateDetails(dto);
+			entityData.setCreatedAt(LocalDateTime.now());
+			entityData.setModifyAt(LocalDateTime.now());
+			return entityData;
+		} catch (Exception e) {
+			throw new NullArgumentException("error :" + e.getMessage());
+		}
+	}
+
+}

@@ -1,0 +1,13 @@
+
+€	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.b 61b480edb580a0baaae49dedbdc8f2d4h
+6
+java:S1451"&Add or update the header of this file.h
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+h
+java:S2221%"4Catch a list of specific exception subtypes instead.b b0d4998a26f5b5742ad38c4af8817e32h
+x
+java:S1695"DThrow some other exception here, such as "IllegalArgumentException".b 1941c51769e492684f2083d372cc3763h
+x
+java:S1695""DThrow some other exception here, such as "IllegalArgumentException".b 1941c51769e492684f2083d372cc3763h
+í
+java:S4605"¸'adminAccessService' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.b 61b480edb580a0baaae49dedbdc8f2d4h

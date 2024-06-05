@@ -1,0 +1,13 @@
+package com.hrportal.mapper;
+
+import org.mapstruct.Mapper;
+
+import com.hrportal.entity.CandidateCredential;
+import com.hrportal.model.response.CandidatePassResponse;
+
+@Mapper
+public interface DestinationSourceMapper {
+	
+	CandidatePassResponse candiCredToCandiPassRes(CandidateCredential credentialData);
+
+}

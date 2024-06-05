@@ -1,0 +1,18 @@
+package com.user.getway.config;
+
+import java.util.List;
+import java.util.function.Predicate;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.http.server.reactive.ServerHttpRequest;
+import org.springframework.stereotype.Service;
+
+@ComponentScan
+@Service
+public class RouterValidator {
+
+	public static final List<String> openEndpoints = List.of("/api/bhai", "/user/kk", "/identity/auth/login/**");
+
+	public Predicate<ServerHttpRequest> isSecured = request -> openEndpoints.stream()
+			.noneMatch(uri -> request.getURI().getPath().contains(uri));
+}

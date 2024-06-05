@@ -1,0 +1,6 @@
+
+6
+java:S1451"&Add or update the header of this file.h
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+ï
+java:S4605"º'CheckPointController' is not reachable by @ComponentScan or @SpringBootApplication. Either move it to a package configured in @ComponentScan or update your @ComponentScan configuration.b d0c0341e678694a8ae83ccd830fa46adh

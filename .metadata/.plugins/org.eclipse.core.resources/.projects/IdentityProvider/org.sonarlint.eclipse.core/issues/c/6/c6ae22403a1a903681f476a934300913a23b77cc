@@ -1,0 +1,8 @@
+
+6
+java:S1451"&Add or update the header of this file.h
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+q
+java:S1854&"=Remove this useless assignment to local variable "userRoles".b d38181c8f22d361042515e4973f47e4eh
+†
+java:S6204'"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'b f31c9542f92d797a57d6f9bafca179cdh

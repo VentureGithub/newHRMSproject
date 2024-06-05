@@ -1,0 +1,42 @@
+//package com.hrportal.service;
+//
+//import java.time.LocalDateTime;
+//
+//import org.apache.commons.lang.NullArgumentException;
+//import org.modelmapper.ModelMapper;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.context.annotation.ComponentScan;
+//import org.springframework.stereotype.Service;
+//
+//import com.hrportal.entity.CandidateDetails;
+//import com.hrportal.mapper.DestinationSourceMapper;
+//import com.hrportal.model.CandidateDetailsDTO;
+//
+//@ComponentScan
+//@Service
+//public class Conversion<S,K> {
+//
+//	private DestinationSourceMapper mapper;
+//	
+//	@Autowired
+//	private ModelMapper modelMapper;
+//
+//	public Conversion(DestinationSourceMapper mapper) {
+//		super();
+//		this.mapper = mapper;
+//	}
+//
+//	public S cadidateDetailDtoToCandidateDetail(K dto) {
+//		try {
+//	          entityData = this.modelMapper.map();
+//			entityData.setCreatedAt(LocalDateTime.now());
+//			entityData.setModifyAt(LocalDateTime.now());
+//			return entityData;
+//		} catch (Exception e) {
+//			throw new NullArgumentException("error :" + e.getMessage());
+//		}
+//	}
+//	
+//	public 
+//
+//}

@@ -1,0 +1,10 @@
+
+6
+java:S1451"&Add or update the header of this file.h
+T	java:S105"EReplace all tab characters in this file by sequences of white-spaces.h
+†
+java:S3776+"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.b e10718efd52407198909f8b7126ec6cch
+d
+java:S19436"0Remove this use of constructor "String(byte[])".b 27118326006d3829667a400ad23d5d98h
+h
+java:S2221E"4Catch a list of specific exception subtypes instead.b b0d4998a26f5b5742ad38c4af8817e32h

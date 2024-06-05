@@ -1,0 +1,19 @@
+package com.hrportal.util;
+
+public class Util {
+
+	public static Object createInstance(Class<?> cls) throws InternalServerErrorException {
+		
+		private Util() {
+			throw new NotImplementedException("All methods are static.");
+		}
+		
+		try {
+			return cls.getConstructor().newInstance();
+		} catch (InstantiationException | IllegalAccessException | NoSuchMethodException
+				| InvocationTargetException e) {
+			throw new InternalServerErrorException("Internal error");
+		}
+	}
+
+}

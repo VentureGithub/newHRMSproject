@@ -1,0 +1,5 @@
+package com.hrportal.model.response;
+
+public class BaseResponse {
+
+}
